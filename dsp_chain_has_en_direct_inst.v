@@ -1,5 +1,7 @@
 `timescale 1ns/1ps
 
+// can only synthesized both input pipeline registers with enable by primitive instantiation.
+
 module dsp_chain_has_en_direct_inst (
   input      [15:0]   a,
   input      [15:0]   b_0,
