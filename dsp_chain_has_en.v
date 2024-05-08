@@ -65,6 +65,7 @@ module dsp_chain_has_en(
 
     assign p_out = p_d_3;
 
+    // The data loading path, a_0 to a_3, cannot be synthesized into DSP48E2.
     always@(posedge clk) begin
         if(ena_0) begin
             a_0 <= a;
@@ -80,6 +81,7 @@ module dsp_chain_has_en(
         end
     end
 
+    // a_d_0 to a_d3 can be synthesized into DSP48E2.
     always@(posedge clk) begin
         if(ena_d_0) begin
             a_d_0 <= a_0;
