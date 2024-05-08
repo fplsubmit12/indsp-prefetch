@@ -10,4 +10,4 @@ The designs were synthesized using the tcl command `synth_design -mode out_of_co
 
 - **Without Clock Enable**: Vivado successfully synthesized the input cascade path into the DSP without enabling the input pipeline registers. This implementation is demonstrated in `dsp_chain_no_en.v`.
 - **With Clock Enable**: Vivado could not synthesize the input cascade path into the DSP when enabling the input pipeline registers. This implementation is demonstrated in `dsp_chain_has_en.v`.
-- **Direct Instantiation with Clock Enagle**: Vivado was able to synthesize the input cascade path into the DSP with enables when using direct instantiation of primitives. This implementation is demonstrated in `dsp_chain_has_en_direct_inst.v`.
+- **Direct Instantiation with Clock Enable**: Vivado was able to synthesize the input cascade path into the DSP with enables when using direct instantiation of primitives. This implementation is demonstrated in `dsp_chain_has_en_direct_inst.v`.
