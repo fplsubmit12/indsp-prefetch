@@ -57,6 +57,7 @@ module dsp_chain_no_en(
 
     assign p_out = p_d_3;
 
+    // both a_0 to a_3 and a_d_0 to a_d_3 can be synthesized into DSP48E2. This is just simple FIR filter setup if no enables are applied.
     always@(posedge clk) begin
         a_0 <= a;
         a_1 <= a_0;
